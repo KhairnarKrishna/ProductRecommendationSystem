@@ -102,8 +102,9 @@
 
 .product-image-container img {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
+    margin-left: 35px;
 }
 
 .product-details {
@@ -137,6 +138,13 @@
     background: aquamarine;
     font-size: 22px;
     color: currentcolor;
+}
+
+.product-name {
+    padding: 0px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product-recommendation-score {

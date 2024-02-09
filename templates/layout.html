@@ -58,10 +58,14 @@
                 <br> <br>
                 <label id="type-label">Laptop Type : </label>
                 <select id="type-dropdown">
-                    <option value="Entertainment">Entertainment</option>
-                    <option value="Gaming">Gaming</option>
-                    <option value="Professional">Professional</option>
-                    <option value="Creators">Creators</option>
+                    <option value="Chromebook">Chromebook</option>
+                    <option value="Thin and Light Laptop">Thin and Light Laptop</option>
+                    <option value="Gaming Laptop">Gaming Laptop</option>
+                    <option value="2 in 1 Laptop">2 in 1 Laptop</option>
+                    <option value="Creator Laptop">Creator Laptop</option>
+                    <option value="Notebook">Notebook</option>
+                    <option value="Business Laptop">Business Laptop</option>
+                    <option value="2 in 1 Gaming Laptop">2 in 1 Gaming Laptop</option>
                 </select>
                 <br> <br>
                 <a href="" id="advance-options">Additional Filters</a>
@@ -76,7 +80,9 @@
             {% for product in data %}
             <div class="product-card">
                 <div class="product-image-container">
-                    <img src="{{ product[0] }}" class="product-image">
+                    <a href="{{ product[11] }}" target="_blank" title=" {{ product[1] }} ">
+                        <img src="{{ product[0] }}" class="product-image">
+                    </a>
                 </div>
                 <div class="product-details">
                     <h6 class="product-name">{{ product[1] }}</h6>
