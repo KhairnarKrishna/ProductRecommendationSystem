@@ -176,7 +176,7 @@ for review_url in df['Review Url']:
                     product_review_data.append([pr_id, review_title.text, '', review_details.text, upvote.text,
                                                 downvote.text])
 
-dataset = pd.DataFrame(data=product_review_data, columns=["Product Review ID", "Title", "rating", "detail_review", "upvote", "downvote"])
+dataset = pd.DataFrame(data=product_review_data, columns=["Product ID", "Title", "rating", "detail_review", "upvote", "downvote"])
 dataset.to_csv("datasets/flipkart_laptop_review_data.csv", index=False)
 
 

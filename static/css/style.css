@@ -161,3 +161,13 @@
   background: #1b1f22;
 }
 
+#submit-btn {
+    position: relative;
+    margin-left: 235px;
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    background: #13cd15;
+    color: white;
+    font-weight: 700;
+}

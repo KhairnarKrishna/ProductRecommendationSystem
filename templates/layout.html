@@ -10,6 +10,8 @@
 
     <!-- JS -->
     <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery-3.5.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 
 
 
@@ -50,18 +52,21 @@
 <main>
     <div class="main-container">
         <div class="filter-content">
-            <label id="budget-label">Budget Range :</label> <br>
-            <input type="number" placeholder="min" id="min-budget"> - <input type="number" placeholder="max" id="max-budget">
-            <br> <br>
-            <label id="type-label">Laptop Type : </label>
-            <select id="type-dropdown">
-                <option>Entertainment</option>
-                <option>Gaming</option>
-                <option>Professional</option>
-                <option>Creators</option>
-            </select>
-            <br> <br>
-            <a href="" id="advance-options">Additional Filters</a>
+            <form id="inputForm">
+                <label id="budget-label">Budget Range :</label> <br>
+                <input type="number" placeholder="min" id="min-budget"> - <input type="number" placeholder="max" id="max-budget">
+                <br> <br>
+                <label id="type-label">Laptop Type : </label>
+                <select id="type-dropdown">
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Creators">Creators</option>
+                </select>
+                <br> <br>
+                <a href="" id="advance-options">Additional Filters</a>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
         </div>
 
         <!-- Recommended Products appear here -->
